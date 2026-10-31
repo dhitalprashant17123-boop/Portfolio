@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0d0f14">
+<meta name="description" content="Portfolio of Prashant Dhital, a B.Tech Computer Science &amp; Engineering student at BMSIT, Bengaluru.">
+<title>Prashant Dhital | CSE Student &amp; Python Developer</title>
+<style>
+:root{--bg:#0d0f14;--card:#151922;--line:#252b38;--text:#e8ebf2;--muted:#8d95a8;--accent:#5eead4}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6}
+a{color:var(--accent);text-decoration:none}
+nav{position:sticky;top:0;z-index:10;background:#0d0f14ee;backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:14px 5vw;flex-wrap:wrap;gap:8px}
+nav .logo{font-family:monospace;font-weight:700;color:var(--text)}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav ul a{color:var(--muted);font-size:.95rem}nav ul a:hover{color:var(--accent)}
+section{padding:80px 5vw;max-width:1000px;margin:auto}
+.tag{font-family:monospace;color:var(--accent);font-size:.9rem}
+h1{font-size:clamp(2rem,6vw,3.4rem);margin:.3em 0}h2{font-size:2rem;margin:.2em 0 .6em}
+.muted{color:var(--muted)}
+.btn{display:inline-block;padding:10px 20px;border-radius:8px;border:1px solid var(--accent);color:var(--accent);margin:6px 8px 6px 0;background:none;cursor:pointer;font-size:1rem}
+.btn.primary{background:var(--accent);color:#07201c}
+.hero{display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:center;min-height:80vh}
+.hero img,.about img{width:100%;max-width:320px;border-radius:16px;border:1px solid var(--line);background:var(--card);aspect-ratio:1;object-fit:cover}
+.socials a{margin-right:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px}
+.timeline{list-style:none;padding:0;border-left:2px solid var(--line);margin-left:6px}
+.timeline li{padding:0 0 28px 22px;position:relative}
+.timeline li:before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.timeline h3{margin:.2em 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.bar{height:8px;background:var(--line);border-radius:99px;overflow:hidden;margin:10px 0 6px}
+.bar i{display:block;height:100%;background:var(--accent);transition:width .3s}
+.skill h3{margin:0}.skill .row{display:flex;justify-content:space-between;align-items:baseline}
+.admin{display:none;gap:6px;margin-top:10px;flex-wrap:wrap}
+body.owner .admin{display:flex}
+.admin button{background:var(--bg);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:4px 10px;cursor:pointer}
+.ownerbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin:14px 0}
+.ownerbar .btn{margin:0}
+.only-owner{display:none}body.owner .only-owner{display:inline-block}
+input,textarea{width:100%;background:var(--card);border:1px solid var(--line);color:var(--text);padding:10px 12px;border-radius:8px;font:inherit;margin:4px 0 12px}
+label{font-size:.9rem;color:var(--muted)}
+.contact-list{list-style:none;padding:0}.contact-list li{margin:6px 0}
+.tech{display:flex;gap:8px;flex-wrap:wrap;padding:0;list-style:none}
+.tech li{font-family:monospace;font-size:.8rem;border:1px solid var(--line);padding:2px 10px;border-radius:99px;color:var(--muted)}
+footer{border-top:1px solid var(--line);padding:30px 5vw;text-align:center;color:var(--muted)}
+@media(max-width:700px){.hero{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<nav>
+  <a class="logo" href="#home">&lt;Prashant /&gt;</a>
+  <ul>
+    <li><a href="#home">Home</a></li><li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li><li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section id="home" class="hero">
+  <div>
+    <div class="tag">// hello, world</div>
+    <h1>Hi, I'm Prashant Dhital.</h1>
+    <p class="muted">B.Tech CSE Student at BMSIT, Bengaluru | Aspiring Engineer | Python Enthusiast</p>
+    <p>I love learning continuously, solving complex problems, and building things that make a positive impact.</p>
+    <a class="btn primary" href="#projects">View Projects</a><a class="btn" href="#contact">Contact Me</a><button class="btn" id="dlResume" type="button">⬇ Download Resume</button>
+    <p class="socials">
+      <a href="https://github.com/your-username">GitHub</a>
+      <a href="https://www.linkedin.com/in/dhital-prashant-6317b0317">LinkedIn</a>
+      <a href="https://www.instagram.com/prashant.60599">Instagram</a>
+    </p>
+  </div>
+  <img src="profile.jpg" alt="Portrait of Prashant Dhital" onerror="this.style.visibility='hidden'">
+</section>
+
+<section id="about" class="about">
+  <div class="tag">01. about</div><h2>About me</h2>
+  <p>I'm a student currently pursuing a B.Tech in Computer Science and Engineering at BMS Institute of Technology and Management (BMSIT), Bengaluru, and I dream of becoming a great engineer.</p>
+  <p>Continuous learning, solving complex problems, and making a positive impact on a team or organization are what drive my work. Right now I'm building hands-on projects in Python, exploring speech technology and chatbots along the way.</p>
+  <div class="grid">
+    <div class="card"><div class="muted">Currently Studying</div>B.Tech CSE, BMSIT</div>
+    <div class="card"><div class="muted">Focus</div>Python and problem solving</div>
+    <div class="card"><div class="muted">Goal</div>Becoming a great engineer</div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="tag">02. education</div><h2>Education</h2>
+  <ol class="timeline">
+    <li><div class="muted">Present</div><h3>B.Tech in Computer Science and Engineering</h3>BMS Institute of Technology and Management (BMSIT), Bengaluru<br><span class="muted">Currently pursuing</span></li>
+    <li><div class="muted">2083 BS</div><h3>12th Grade (Higher Secondary)</h3>SOS Herman Gmeiner<br><span class="muted">GPA 3.75</span></li>
+    <li><div class="muted">2081 BS</div><h3>10th Grade (Secondary)</h3>Sisne Academy<br><span class="muted">GPA 3.76</span></li>
+  </ol>
+</section>
+
+<section id="skills">
+  <div class="tag">03. skills</div><h2>Skills</h2>
+  <p class="muted">An honest self-assessment of where I am today. Every score is a snapshot, and I'm working to move each one up.</p>
+  <p class="muted">1-3 = learning the basics · 4-6 = can complete guided tasks · 7-8 = can work independently on familiar tasks · 9-10 = advanced, can explain trade-offs and help others.</p>
+
+  <div class="ownerbar">
+    <span class="muted" id="count"></span>
+    <button class="btn only-owner" id="resetBtn">Reset to defaults</button>
+    <button class="btn only-owner" id="addBtn">Add a skill</button>
+    <button class="btn" id="ownerToggle" style="font-size:.8rem;padding:4px 10px;opacity:.6">Owner login</button>
+  </div>
+  <div class="grid" id="skillGrid"></div>
+  <p class="muted">Currently learning · Always learning: expanding into web development, data structures, and AI.</p>
+</section>
+
+<section id="projects">
+  <div class="tag">04. projects</div><h2>Things I've built</h2>
+  <p class="muted">Hands-on projects where I explore speech technology and conversational AI with Python.</p>
+  <div class="grid">
+    <div class="card"><div class="tag">01</div><h3>Jire: Voice Assistant</h3><div class="muted">Inspired by Alexa</div>
+      <p>A Python-based voice assistant that listens to spoken commands and responds with speech. It captures voice input, processes the request, and talks back, connecting to external services through their APIs.</p>
+      <ul class="tech"><li>Python</li><li>PyAudio</li><li>pyttsx3</li><li>External APIs</li></ul>
+      <p><a href="https://github.com/your-username/jire">View on GitHub</a> · <a href="#">Live Demo</a></p></div>
+    <div class="card"><div class="tag">02</div><h3>Chatbot</h3><div class="muted">Conversational assistant</div>
+      <p>A Python-based chatbot that interacts with users through natural conversation, using API integration to understand messages and generate helpful replies.</p>
+      <ul class="tech"><li>Python</li><li>API</li></ul>
+      <p><a href="https://github.com/your-username/chatbot">View on GitHub</a> · <a href="#">Live Demo</a></p></div>
+  </div>
+  <p class="muted"><em>More projects coming soon...</em></p>
+</section>
+
+<section id="contact">
+  <div class="tag">05. contact</div><h2>Let's Connect</h2>
+  <p>I'm always open to new opportunities, collaborations, internships, or simply a good conversation about tech. Feel free to reach out!</p>
+  <ul class="contact-list">
+    <li><span class="muted">Email</span> dhitalprashant17123@gmail.com</li>
+    <li><span class="muted">Phone</span> 9180399158</li>
+    <li><span class="muted">WhatsApp</span> <a href="https://wa.me/9779843857240">+977 9843857240</a></li>
+    <li><span class="muted">LinkedIn</span> <a href="https://www.linkedin.com/in/dhital-prashant-6317b0317">linkedin.com/in/dhital-prashant-6317b0317</a></li>
+    <li><span class="muted">GitHub</span> <a href="https://github.com/your-username">github.com/your-username</a></li>
+    <li><span class="muted">Instagram</span> <a href="https://www.instagram.com/prashant.60599">@prashant.60599</a></li>
+  </ul>
+  <!-- The "you@example.com" placeholder has been removed from the Email field -->
+  <form action="mailto:dhitalprashant17123@gmail.com" method="post" enctype="text/plain">
+    <label>Name</label><input name="name" required>
+    <label>Email</label><input name="email" type="email" required>
+    <label>Subject</label><input name="subject">
+    <label>Message</label><textarea name="message" rows="5" required></textarea>
+    <button class="btn primary" type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Prashant Dhital. All rights reserved.</p>
+  <p>Designed and built with ❤️ by Prashant.</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+/* ===== OWNER SETTINGS =====
+   Only someone who knows the passcode can see edit controls.
+   OWNER_HASH = SHA-256 of your passcode. Default passcode: change-me-123
+   To change it, run in a browser console:
+   crypto.subtle.digest('SHA-256',new TextEncoder().encode('YOUR-PASSCODE')).then(b=>console.log([...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')))
+   and paste the result below. */
+const OWNER_HASH = "8eb2961d9750214f76ff37133422ee3f48100588caa32566007a6d33bea8b5fc";
+
+/* Permanent skills shown to EVERY visitor. Edit these in code to update the live site. */
+const DEFAULT_SKILLS = [
+  {name:"Python",category:"Programming language",score:5},
+  {name:"C / C++",category:"Programming language",score:1},
+  {name:"HTML",category:"Web fundamentals",score:2},
+  {name:"Java",category:"Programming language",score:0},
+  {name:"JavaScript",category:"Programming language",score:0},
+  {name:"SQL",category:"Database",score:0}
+];
+
+const LEVELS = s => s===0 ? "Not started yet" : s<=3 ? "Learning the basics" : s<=6 ? "Can complete guided tasks" : s<=8 ? "Independent on familiar tasks" : "Advanced";
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+let isOwner = false;
+let skills = DEFAULT_SKILLS.map(s=>({...s}));
+
+/* Owner-only: saved edits are loaded ONLY when the owner is logged in,
+   so regular visitors always see DEFAULT_SKILLS. */
+function loadOwnerEdits(){
+  try{const d=JSON.parse(localStorage.getItem("ownerSkills")); if(Array.isArray(d)) skills=d;}catch(e){}
+}
+function saveOwnerEdits(){ try{localStorage.setItem("ownerSkills",JSON.stringify(skills));}catch(e){} }
+
+function render(){
+  $("count").textContent = skills.length+" skills · ratings out of 10";
+  $("skillGrid").innerHTML = skills.map((s,i)=>`
+    <div class="card skill">
+      <h3>${esc(s.name)}</h3><div class="muted">${esc(s.category)}</div>
+      <div class="bar"><i style="width:${s.score*10}%"></i></div>
+      <div class="row"><strong>${s.score} / 10</strong><span class="muted">${LEVELS(s.score)}</span></div>
+      <div class="admin">
+        <button onclick="changeScore(${i},-1)">−</button>
+        <button onclick="changeScore(${i},1)">+</button>
+        <button onclick="renameSkill(${i})">Edit</button>
+        <button onclick="removeSkill(${i})">Delete</button>
+      </div>
+    </div>`).join("");
+}
+
+/* All edit functions refuse to run unless the owner is logged in. */
+function changeScore(i,d){ if(!isOwner)return; skills[i].score=Math.max(0,Math.min(10,skills[i].score+d)); saveOwnerEdits(); render(); }
+function renameSkill(i){ if(!isOwner)return;
+  const n=prompt("Skill name",skills[i].name); if(n===null)return;
+  const c=prompt("Category",skills[i].category); if(c===null)return;
+  skills[i].name=n.trim()||skills[i].name; skills[i].category=c.trim()||skills[i].category; saveOwnerEdits(); render(); }
+function removeSkill(i){ if(!isOwner)return; if(confirm("Delete this skill?")){skills.splice(i,1);saveOwnerEdits();render();} }
+$("addBtn").onclick=()=>{ if(!isOwner)return;
+  const name=prompt("Skill name"); if(!name)return;
+  const category=prompt("Category","Programming language")||"Skill";
+  const score=Math.max(0,Math.min(10,parseInt(prompt("Score 0-10","0"),10)||0));
+  skills.push({name:name.trim(),category,score}); saveOwnerEdits(); render(); };
+$("resetBtn").onclick=()=>{ if(!isOwner)return;
+  if(confirm("Reset skills to defaults?")){skills=DEFAULT_SKILLS.map(s=>({...s}));saveOwnerEdits();render();} };
+
+async function sha256(t){
+  const b=await crypto.subtle.digest("SHA-256",new TextEncoder().encode(t));
+  return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join("");
+}
+$("ownerToggle").onclick=async()=>{
+  if(isOwner){ isOwner=false; document.body.classList.remove("owner");
+    skills=DEFAULT_SKILLS.map(s=>({...s})); $("ownerToggle").textContent="Owner login"; render(); return; }
+  const p=prompt("Owner passcode"); if(!p)return;
+  if(await sha256(p)===OWNER_HASH){
+    isOwner=true; document.body.classList.add("owner");
+    loadOwnerEdits(); $("ownerToggle").textContent="Log out"; render();
+  } else alert("Wrong passcode.");
+};
+render();
+
+/* ===== Download resume (PDF generated in the browser) ===== */
+function buildResume(){
+  const J=window.jspdf&&window.jspdf.jsPDF; if(!J) throw new Error("PDF library not loaded");
+  const d=new J({unit:"pt",format:"a4"}),W=d.internal.pageSize.getWidth(),M=48,mw=W-2*M;let y=M;
+  const need=h=>{if(y+h>d.internal.pageSize.getHeight()-M){d.addPage();y=M;}};
+  const line=(t,size,bold,gray)=>{d.setFont("helvetica",bold?"bold":"normal");d.setFontSize(size);d.setTextColor(gray?90:20);
+    d.splitTextToSize(t,mw).forEach(l=>{need(size+4);d.text(l,M,y);y+=size+4;});};
+  const head=t=>{y+=10;need(30);line(t.toUpperCase(),11,true);d.setDrawColor(15,118,110);d.line(M,y-6,W-M,y-6);y+=4;};
+  line("Prashant Dhital",24,true);
+  line("B.Tech CSE Student at BMSIT, Bengaluru | Python Enthusiast",11,false,true);
+  line("Email: dhitalprashant17123@gmail.com  |  Phone: 9180399158",9.5,false,true);
+  line("WhatsApp: +977 9843857240  |  LinkedIn: linkedin.com/in/dhital-prashant-6317b0317",9.5,false,true);
+  head("About");
+  line("Computer Science and Engineering student who loves continuous learning, solving complex problems and making a positive impact. Building hands-on projects in Python, exploring speech technology and chatbots.",10.5);
+  head("Education");
+  [["B.Tech in Computer Science and Engineering (Present)","BMS Institute of Technology and Management (BMSIT), Bengaluru"],
+   ["12th Grade, 2083 BS","SOS Herman Gmeiner, GPA 3.75"],
+   ["10th Grade, 2081 BS","Sisne Academy, GPA 3.76"]].forEach(e=>{line(e[0],10.5,true);line(e[1],10.5,false,true);y+=4;});
+  head("Skills (self-assessed, out of 10)");
+  line(DEFAULT_SKILLS.map(s=>s.name+" "+s.score+"/10").join("  |  "),10.5);
+  head("Projects");
+  line("Jire: Voice Assistant (Python, PyAudio, pyttsx3, APIs)",10.5,true);
+  line("Python voice assistant, inspired by Alexa, that listens to spoken commands and responds with speech, connecting to external services through APIs.",10.5);y+=4;
+  line("Chatbot (Python, API)",10.5,true);
+  line("Python chatbot that converses naturally with users using API integration to generate helpful replies.",10.5);
+  return d;
+}
+$("dlResume").addEventListener("click",()=>{
+  try{buildResume().save("Prashant_Dhital_Resume.pdf");}
+  catch(e){alert("Sorry, the resume could not be generated. Please check your connection and try again.");}
+});
+</script>
+</body>
+</html>
